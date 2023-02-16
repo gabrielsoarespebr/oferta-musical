@@ -1,0 +1,18 @@
+.header {
+    background: linear-gradient(var(--greenLight), var(--greenDark));
+
+    height: 12vh;
+    width: 100vw;
+}
+
+.logo {
+    height: 100%;
+}
+
+.searchBtn {
+    background-color: var(--greenDark);   
+}
+
+.searchBtn:hover {
+    background-color: var(--orangeDark);
+}

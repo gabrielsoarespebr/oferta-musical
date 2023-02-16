@@ -1,0 +1,27 @@
+:root {
+  --orangeDark: #f97728;
+
+  --greenLight: #497174;
+  --greenDark: #21445A;
+  --greenPastelLight: #EFF5F5;
+  --greenPastelDark: #D6E4E5;
+
+  --blackLight: #2C2C2C;
+}
+
+/* RESET CSS */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
