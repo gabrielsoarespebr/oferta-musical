@@ -2,7 +2,7 @@
     background: linear-gradient(var(--greenLight), var(--greenDark));
 
     height: 12vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .logo {

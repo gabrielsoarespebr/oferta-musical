@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CardGroup, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import { ProductCard } from '../ProductCard';
 import style from './style.module.css'
 
@@ -16,7 +16,7 @@ export function ProductList() {
 
 
     return (
-        <Row className="row-cols-3">
+        <Row className="row-cols-3 w-75">
             {productList.map(product => <ProductCard key={product.id} info={product} />)}
         </Row>
     )
