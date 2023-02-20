@@ -8,11 +8,21 @@
     border-radius: var(--rounded);
 }
 
+.card:hover .image {
+    transform: scale(1.1);
+
+    transition: .3s ease-in-out;
+}
+
+.zoom {
+    overflow: hidden;
+
+    border-radius: var(--rounded);
+}
+
 .image {
     width: 100%;
     height: 30vh;
-
-    border-radius: var(--rounded);
 
     object-fit: cover;
 }

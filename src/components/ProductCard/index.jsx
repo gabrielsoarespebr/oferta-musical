@@ -5,7 +5,10 @@ import style from './style.module.css'
 export function ProductCard(props) {
     return (
         <Card className={`${style.card} p-0`}>
-            <Card.Img className={`${style.image}`} variant="top" src={props.info.image[0]} />
+            <span className={`${style.zoom}`}>
+                <Card.Img className={`${style.image}`} variant="top" src={props.info.image[0]} />
+            </span>
+
             <Card.Body className='d-flex flex-column'>
 
                 {/* Type 0 means a row that describes Category and Price */}
