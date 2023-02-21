@@ -9,7 +9,7 @@ export function RowSecondaryInfo(props) {
         return (
             <div className='d-flex justify-content-around align-items-center'>
                 <Card.Text className='d-flex m-0 align-items-center gap-2'>
-                    <img src={`https://img.icons8.com/fluency-systems-filled/48/${category[props.info.category]}`} alt={props.info.title} className='col-3' />
+                    <img src={`https://img.icons8.com/fluency-systems-filled/48/${category[props.info.category]}`} alt={props.info.title} className='col-2' />
                     <span className='fw-semibold m-0 small'>
                         {props.info.category[0].toUpperCase()}
                         {props.info.category.substring(1)}
@@ -31,7 +31,7 @@ export function RowSecondaryInfo(props) {
                     </span>
                 </Card.Text>
                 <Card.Text className='d-flex justify-content-end align-items-center gap-2 w-50'>
-                    <img className='col-1' src="./src/assets/icons/icons8-marcador-50.png" alt="Place mark icon" />
+                    <img className='col-2' src="./src/assets/icons/icons8-marcador-50.png" alt="Place mark icon" />
                     <span className='fw-semibold m-0 small'>
                         {props.info.address.city} - {props.info.address.state}
                     </span>
