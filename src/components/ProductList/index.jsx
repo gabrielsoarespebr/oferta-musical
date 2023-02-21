@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap';
 import { ProductCard } from '../ProductCard';
 import style from './style.module.css'
 
-export function ProductList() {
+export function ProductList({ searchValue }) {
 
     const [productList, setProductList] = useState([]);
 
@@ -14,10 +14,13 @@ export function ProductList() {
 
     useEffect(() => { fetchProduct() });
 
-
     return (
         <Row className="row-cols-3 w-75">
-            {productList.map(product => <ProductCard key={product.id} info={product} />)}
+            {
+                productList
+                    .filter(product => product.title.toLowerCase().includes(searchValue.toLowerCase()))
+                    .map(productFiltered => <ProductCard key={productFiltered.id} info={productFiltered} />)
+            }
         </Row>
     )
 }
