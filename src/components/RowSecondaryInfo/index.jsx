@@ -9,7 +9,7 @@ export function RowSecondaryInfo(props) {
         return (
             <div className='d-flex justify-content-around align-items-center'>
                 <Card.Text className='d-flex m-0 align-items-center gap-2'>
-                    <img src={`src/assets/icons/${category[props.info.category]}`} alt={props.info.title} className='col-3' />
+                    <img src={`https://img.icons8.com/fluency-systems-filled/48/${category[props.info.category]}`} alt={props.info.title} className='col-3' />
                     <span className='fw-semibold m-0 small'>
                         {props.info.category[0].toUpperCase()}
                         {props.info.category.substring(1)}
