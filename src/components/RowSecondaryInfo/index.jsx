@@ -1,5 +1,4 @@
 import { Card } from 'react-bootstrap'
-import style from './style.module.css'
 import { category } from '../../services/categoryIcon'
 
 export function RowSecondaryInfo(props) {

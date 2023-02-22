@@ -1,0 +1,5 @@
+.searchSidebar {
+    background-color: var(--greenPastelLight);
+
+    border-radius: var(--rounded);
+}
