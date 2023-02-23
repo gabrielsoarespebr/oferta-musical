@@ -21,21 +21,12 @@ function App() {
   const [searchValue, setSearchValue] = useState('');
 
   // Handle category clicked
-  async function handleCategoryClick(categoryBtn) {
-    // fetchProduct();
-    const category = categoryBtn.target.title;
-    const productListUpdated = productList.filter(product => product.category === category);
+  const [categorySelected, setCategorySelected] = useState('');
 
-    setProductList(productListUpdated);
+  const handleCategoryClick = categoryBtn => {
+    const categoryTitle = categoryBtn.target.title;
+    setCategorySelected(categoryTitle);
   }
-
-  // Handle category clicked
-  // const handleCategoryClick = categoryBtn => {
-  //   const category = categoryBtn.target.title;
-  //   const productListUpdated = productList.filter(product => product.category === category);
-  //   fetchProduct();
-  //   setProductList(productListUpdated);
-  // }
 
   return (
     <div className="App">
@@ -43,7 +34,7 @@ function App() {
       <main className='d-flex justify-content-around'>
         <FilterAside handleCategoryClick={handleCategoryClick}></FilterAside>
 
-        <ProductList searchValue={searchValue} productList={productList}></ProductList>
+        <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList}></ProductList>
       </main>
 
     </div>
