@@ -6,6 +6,8 @@
     background-color: var(--greenPastelLight);
 
     border-radius: var(--rounded);
+
+    max-height: 60%;
 }
 
 .card:hover .image {
