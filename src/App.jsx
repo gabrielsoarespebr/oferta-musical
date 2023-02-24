@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { ProductList } from './components/ProductList'
 import { useEffect, useState } from 'react';
 import { FilterAside } from './components/FilterAside';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -35,11 +36,13 @@ function App() {
   return (
     <div className="App">
       <Header setSearchValue={setSearchValue} />
-      <main className='d-flex justify-content-around'>
+      <main className='d-flex justify-content-around my-3'>
         <FilterAside handleCategoryClick={handleCategoryClick} setPriceMin={setPriceMin} setPriceMax={setPriceMax}></FilterAside>
 
         <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax}></ProductList>
       </main>
+
+      <Footer></Footer>
 
     </div>
   )
