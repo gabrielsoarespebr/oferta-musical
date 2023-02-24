@@ -11,9 +11,9 @@
 }
 
 .okBtn {
-    background-color: var(--greenDark);   
+    background-color: var(--greenLight);   
 }
 
 .okBtn:hover {
-    background-color: var(--orangeDark);
+    background-color: var(--greenDark);   
 }
