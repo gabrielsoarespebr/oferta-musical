@@ -28,13 +28,17 @@ function App() {
     setCategorySelected(categoryTitle);
   }
 
+  // Handle price interval
+  const [priceMin, setPriceMin] = useState(0);
+  const [priceMax, setPriceMax] = useState(30000);
+
   return (
     <div className="App">
       <Header setSearchValue={setSearchValue} />
       <main className='d-flex justify-content-around'>
-        <FilterAside handleCategoryClick={handleCategoryClick}></FilterAside>
+        <FilterAside handleCategoryClick={handleCategoryClick} setPriceMin={setPriceMin} setPriceMax={setPriceMax}></FilterAside>
 
-        <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList}></ProductList>
+        <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax}></ProductList>
       </main>
 
     </div>

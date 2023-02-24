@@ -1,4 +1,6 @@
 .searchSidebar {
+    width: 22vw;
+    
     background-color: var(--greenPastelLight);
 
     border-radius: var(--rounded);
@@ -6,4 +8,12 @@
 
 .filterTitle{
     color: var(--blackLight);
+}
+
+.okBtn {
+    background-color: var(--greenDark);   
+}
+
+.okBtn:hover {
+    background-color: var(--orangeDark);
 }
