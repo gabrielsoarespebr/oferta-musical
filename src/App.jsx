@@ -33,17 +33,19 @@ function App() {
   const [priceMin, setPriceMin] = useState(0);
   const [priceMax, setPriceMax] = useState(30000);
 
+  // Handle state abbreviation
+  const [stateAbbreviaton, setStateAbbreviaton] = useState('');
+
   return (
     <div className="App">
       <Header setSearchValue={setSearchValue} />
       <main className='d-flex justify-content-around my-3'>
-        <FilterAside handleCategoryClick={handleCategoryClick} setPriceMin={setPriceMin} setPriceMax={setPriceMax}></FilterAside>
+        <FilterAside handleCategoryClick={handleCategoryClick} setPriceMin={setPriceMin} setPriceMax={setPriceMax} setStateAbbreviaton={setStateAbbreviaton}></FilterAside>
 
-        <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax}></ProductList>
+        <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax} stateAbbreviaton={stateAbbreviaton}></ProductList>
       </main>
 
       <Footer></Footer>
-
     </div>
   )
 }

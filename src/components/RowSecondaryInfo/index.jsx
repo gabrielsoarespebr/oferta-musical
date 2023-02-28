@@ -30,7 +30,7 @@ export function RowSecondaryInfo(props) {
                     </span>
                 </Card.Text>
                 <Card.Text className='d-flex justify-content-end align-items-center gap-2 w-50'>
-                    <img className='col-2' src="./src/assets/icons/icons8-marcador-50.png" alt="Place mark icon" />
+                    <img className='col-2 shadow-sm' src={`https://github.com/bgeneto/bandeiras-br/blob/master/imagens/${props.info.address.state}.png?raw=true`} alt="State flag" />
                     <span className='fw-semibold m-0 small'>
                         {props.info.address.city} - {props.info.address.state}
                     </span>

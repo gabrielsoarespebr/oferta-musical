@@ -2,7 +2,7 @@ import style from './style.module.css'
 import { category } from '../../services/categoryIcon'
 import { useState } from 'react'
 
-export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax }) {
+export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax, setStateAbbreviaton }) {
 
     // Handle local price interval
     const [localPriceMin, setLocalPriceMin] = useState(0);
@@ -16,6 +16,14 @@ export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax }) {
     const handlePriceClick = () => {
         setPriceMin(localPriceMin);
         setPriceMax(localPriceMax);
+    }
+
+    // Handle states abbreviation filter
+    const states = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
+
+    const handleStateFlagClick = stateFlag => {
+        setStateAbbreviaton(stateFlag.target.title);
+        console.log(stateFlag)
     }
 
     return (
@@ -32,7 +40,7 @@ export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax }) {
                 </div>
             </section>
 
-            <dl>
+            <dl className='m-0'>
                 <dt className={style.filterTitle}>Categoria</dt>
                 {
                     Object
@@ -47,6 +55,17 @@ export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax }) {
                         })
                 }
             </dl>
+
+            <section>
+                <p className={`${style.filterTitle} fw-bold m-0`}>Estados</p>
+                <dl className='d-flex flex-wrap gap-2'>
+                    {states.map(state => {
+                        return <dd key={state} className='col-2'>
+                            <img title={state} className='shadow-sm cursor-pointer' onClick={handleStateFlagClick} src={`https://github.com/bgeneto/bandeiras-br/blob/master/imagens/${state}.png?raw=true`} alt="State flag" />
+                        </dd>
+                    })}
+                </dl>
+            </section>
         </aside >
     )
 }
