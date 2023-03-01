@@ -27,7 +27,7 @@ export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax, set
     }
 
     return (
-        <aside className={`${style.searchSidebar} fw-semibold p-3 d-flex flex-column gap-4`}>
+        <aside className={`${style.searchSidebar} fw-semibold p-3 d-flex flex-column gap-4 mb-auto`}>
             <section>
                 <p className={`${style.filterTitle} fw-bold m-0`}>Preço</p>
                 <div className="input-group">
