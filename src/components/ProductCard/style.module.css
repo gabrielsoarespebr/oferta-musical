@@ -12,8 +12,6 @@
 
 .card:hover .image {
     transform: scale(1.1);
-
-    transition: .3s ease-in-out;
 }
 
 .zoom {
@@ -27,6 +25,8 @@
     height: 30vh;
 
     object-fit: cover;
+
+    transition: .3s ease-in-out;
 }
 
 .footer {
