@@ -29,7 +29,8 @@
     transition: .3s ease-in-out;
 }
 
-.footer {
+.footer,
+.buyBtn {
     background-color: var(--greenLight);
 
     width: 100%;
@@ -38,6 +39,37 @@
     border-radius: 0 0 var(--rounded) var(--rounded) !important;
 }
 
-.footer:hover {
+.buyBtn {
+    border-radius: .4em !important;
+}
+
+.footer:hover,
+.buyBtn:hover {
     background-color: var(--greenDark);
+}
+
+.modalOverlay {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    width: 80vw;
+    height: 80vh;
+
+    padding: 5%;
+
+    background-color: white;
+
+    overflow: auto;
 }
