@@ -50,8 +50,8 @@ export function ProductCard(props) {
                     <div className='w-50'>
                         <Carousel>
                             {
-                                props.info.image.map(imageUrl => {
-                                    return <CarouselItem>
+                                props.info.image.map((imageUrl, key) => {
+                                    return <CarouselItem key={key}>
                                         <img src={imageUrl} alt="Instrument photo" />
                                     </CarouselItem>
                                 })
