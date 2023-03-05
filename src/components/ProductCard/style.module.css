@@ -72,4 +72,6 @@
     background-color: white;
 
     overflow: auto;
+
+    border-radius: var(--rounded);
 }

@@ -33,3 +33,8 @@ img {
 .cursor-pointer {
   cursor: pointer;
 }
+
+/* OVERRINDING BOOTSTRAP */
+.input-group .btn {
+  z-index: 0  !important;
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Card } from 'react-bootstrap'
+import { Card, Carousel, CarouselItem } from 'react-bootstrap'
 import { category } from '../../services/categoryIcon'
 import Modal from 'react-modal'
 import { RowSecondaryInfo } from '../RowSecondaryInfo'
@@ -48,7 +48,15 @@ export function ProductCard(props) {
                 </div>
                 <div className="d-flex gap-4">
                     <div className='w-50'>
-                        <img src={props.info.image[0]} alt="Instrument photo" />
+                        <Carousel>
+                            {
+                                props.info.image.map(imageUrl => {
+                                    return <CarouselItem>
+                                        <img src={imageUrl} alt="Instrument photo" />
+                                    </CarouselItem>
+                                })
+                            }
+                        </Carousel>
                     </div>
                     <div className='w-50 d-flex flex-column gap-3'>
                         <p className='my-0'>{props.info.description}</p>
