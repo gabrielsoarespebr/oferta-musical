@@ -14,15 +14,15 @@
     },
     {
         "id": 2,
-        "title": "Condução 20” Avatar Complex B20",
-        "price": 850,
-        "description": "Condução 20”, marca Avatar, série Complex, liga B20.",
-        "category": "bateria",
-        "image": ["https://img.olx.com.br/images/90/903393015365999.jpg", "https://scontent.frec7-1.fna.fbcdn.net/v/t45.5328-4/322845001_6127814660603932_2060061350845496905_n.jpg?stp=dst-jpg_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=c48759&_nc_ohc=ZiomsK2wU-MAX-bPEXt&tn=v7gOdCtBm3deQdPE&_nc_ht=scontent.frec7-1.fna&oh=00_AfCXfKn6at7FLt6l5DSpTlwcWR26r5BC8OSwBoDD-RFkiA&oe=63F2E251", "https://scontent.frec7-1.fna.fbcdn.net/v/t45.5328-4/330143991_8754669647908574_3359262897342615337_n.jpg?stp=dst-jpg_p180x540&_nc_cat=105&ccb=1-7&_nc_sid=c48759&_nc_ohc=8RgflBr3qUQAX-2FO8w&_nc_oc=AQltpKemfkfa7KmA82Vy4MdsKLDx9aDLKYjSOiPn41-dJ8qyUPLm-j6AwvScYbMSpAzERsyyuyz6wnMLT__b1RG7&_nc_ht=scontent.frec7-1.fna&oh=00_AfAQZEEQ5JeDFhXlL4zvhYuU34HejRBkLqWQIp3vxzOFMA&oe=63F38281"],
-        "author": "Gabriel",
+        "title": "Pedal VolWah Sonicake Mini",
+        "price": 200,
+        "description": "Pedal de volume e wahwah com ótimo custo-benefício.",
+        "category": "pedal de efeito",
+        "image": ["https://img.olx.com.br/images/23/230393627459080.jpg", "https://img.olx.com.br/images/23/230347743316000.jpg", "https://img.olx.com.br/images/23/238301502190215.jpg"],
+        "author": "Silva",
         "address": {
-            "city": "Olinda",
-            "state": "PE"
+            "city": "Rio Branco",
+            "state": "AC"
         }
     },
     {
@@ -135,7 +135,7 @@
         "price": 1400,
         "description": "Vendo/Troco\nViolão Tagima Califórnia\nFishman (China)\nRegulado com cordas .012",
         "category": "amplificador",
-        "image": ["https://img.olx.com.br/images/16/160373259398633.jpg", "https://img.olx.com.br/images/16/163368379782936.jpg", "https://img.olx.com.br/images/16/162363735640990.jpg","https://img.olx.com.br/images/16/160313494347128.jpg"],
+        "image": ["https://img.olx.com.br/images/16/160373259398633.jpg", "https://img.olx.com.br/images/16/163368379782936.jpg", "https://img.olx.com.br/images/16/162363735640990.jpg", "https://img.olx.com.br/images/16/160313494347128.jpg"],
         "author": "Cacá",
         "address": {
             "city": "Curitiba",
@@ -148,7 +148,7 @@
         "price": 1500,
         "description": "semi nova ideal para iniciantes",
         "category": "sanfona",
-        "image": ["https://img.olx.com.br/images/15/157351492863618.jpg", "https://img.olx.com.br/images/15/154347134626128.jpg","https://img.olx.com.br/images/15/151385850162678.jpg"],
+        "image": ["https://img.olx.com.br/images/15/157351492863618.jpg", "https://img.olx.com.br/images/15/154347134626128.jpg", "https://img.olx.com.br/images/15/151385850162678.jpg"],
         "author": "Jair",
         "address": {
             "city": "Curitiba",
@@ -161,7 +161,7 @@
         "price": 1500,
         "description": "Excelente sax com acabamento lindo. Comprado em 2021. Muito novo e conservado.",
         "category": "saxofone",
-        "image": ["https://img.olx.com.br/images/09/092329016069375.jpg", "https://img.olx.com.br/images/09/098377376299730.jpg","https://img.olx.com.br/images/09/098368139250824.jpg"],
+        "image": ["https://img.olx.com.br/images/09/092329016069375.jpg", "https://img.olx.com.br/images/09/098377376299730.jpg", "https://img.olx.com.br/images/09/098368139250824.jpg"],
         "author": "Sandro Costa",
         "address": {
             "city": "Rio Bonito",
@@ -187,7 +187,7 @@
         "price": 1500,
         "description": "Trumpet weril profissional sib, com gatilho automático, dourado com estojo conforme fotos.",
         "category": "trompete",
-        "image": ["https://img.olx.com.br/images/69/699384127089035.jpg", "https://img.olx.com.br/images/69/696386361520212.jpg","https://img.olx.com.br/images/69/699360601632294.jpg"],
+        "image": ["https://img.olx.com.br/images/69/699384127089035.jpg", "https://img.olx.com.br/images/69/696386361520212.jpg", "https://img.olx.com.br/images/69/699360601632294.jpg"],
         "author": "Lucas",
         "address": {
             "city": "Rio Bonito",
@@ -200,7 +200,7 @@
         "price": 400,
         "description": "Praticamente novo, nunca foi usado.",
         "category": "cavaquinho",
-        "image": ["https://img.olx.com.br/images/68/688373725311568.jpg", "https://img.olx.com.br/images/68/687333129229963.jpg","https://img.olx.com.br/images/68/689385602087119.jpg"],
+        "image": ["https://img.olx.com.br/images/68/688373725311568.jpg", "https://img.olx.com.br/images/68/687333129229963.jpg", "https://img.olx.com.br/images/68/689385602087119.jpg"],
         "author": "Vitor",
         "address": {
             "city": "Araucária",
@@ -213,7 +213,7 @@
         "price": 2600,
         "description": "Praticamente novo, nunca foi usadoVioloncelo Eagle 4/4, modelo CE 200, seminovo com capa de proteção acompanhado com arco.",
         "category": "violoncelo",
-        "image": ["https://img.olx.com.br/images/16/163386498017327.jpg", "https://img.olx.com.br/images/16/162397254025927.jpg","https://img.olx.com.br/images/16/169345253537480.jpg","https://img.olx.com.br/images/16/164344612652256.jpg","https://img.olx.com.br/images/16/163380371623290.jpg"],
+        "image": ["https://img.olx.com.br/images/16/163386498017327.jpg", "https://img.olx.com.br/images/16/162397254025927.jpg", "https://img.olx.com.br/images/16/169345253537480.jpg", "https://img.olx.com.br/images/16/164344612652256.jpg", "https://img.olx.com.br/images/16/163380371623290.jpg"],
         "author": "Rodrigo",
         "address": {
             "city": "Salvador",
@@ -226,11 +226,89 @@
         "price": 1150,
         "description": "Afinação si bemol, acompanha estojo, 2 baquelite, bocal com braçadeira de couro.",
         "category": "clarinete",
-        "image": ["https://img.olx.com.br/images/02/021377738809123.jpg","https://img.olx.com.br/images/02/026398732559962.jpg","https://img.olx.com.br/images/02/022313497846971.jpg"],
+        "image": ["https://img.olx.com.br/images/02/021377738809123.jpg", "https://img.olx.com.br/images/02/026398732559962.jpg", "https://img.olx.com.br/images/02/022313497846971.jpg"],
         "author": "Vinícius",
         "address": {
             "city": "Juiz de Fora",
             "state": "MG"
+        }
+    },
+    {
+        "id": 19,
+        "title": "Peladeira GE100",
+        "price": 350,
+        "description": "Funcionando perfeitamente. Apenas o display está com problema.",
+        "category": "pedal de efeito",
+        "image": ["https://img.olx.com.br/images/19/191392385900407.jpg", "https://img.olx.com.br/images/19/197399388098158.jpg"],
+        "author": "Wendy Naely",
+        "address": {
+            "city": "Arapiraca",
+            "state": "AL"
+        }
+    },
+    {
+        "id": 20,
+        "title": "Piano Elétrico Korg",
+        "price": 1500,
+        "description": "Piano Elétrico Korg SP170S.",
+        "category": "piano",
+        "image": ["https://img.olx.com.br/images/04/049379495264827.jpg", "https://img.olx.com.br/images/04/040314612359001.jpg","https://img.olx.com.br/images/04/043365017343171.jpg"],
+        "author": "Felipe",
+        "address": {
+            "city": "Santana",
+            "state": "AP"
+        }
+    },
+    {
+        "id": 21,
+        "title": "VIOLÃO TAGIMA CALIFORNIA",
+        "price": 650,
+        "description": "Vendo esse lindo violão, funcionando perfeitamente.",
+        "category": "violão",
+        "image": ["https://img.olx.com.br/images/23/237318145949423.jpg","https://img.olx.com.br/images/23/238318503147741.jpg"],
+        "author": "Marcos",
+        "address": {
+            "city": "Manaus",
+            "state": "AM"
+        }
+    },
+    {
+        "id": 22,
+        "title": "Zabumba",
+        "price": 600,
+        "description": "Zabumba 16 microfonada com as baquetas e a correia.",
+        "category": "percussão",
+        "image": ["https://img.olx.com.br/images/19/198345380323365.jpg","https://img.olx.com.br/images/19/193307387423209.jpg","https://img.olx.com.br/images/19/193374740792013.jpg"],
+        "author": "Jovelino",
+        "address": {
+            "city": "Caucaia",
+            "state": "CE"
+        }
+    },
+    {
+        "id": 23,
+        "title": "Mesa de Som WATTSOM MXS12 II",
+        "price": 335,
+        "description": "Mesa de som analógica WATTSOM MXS12 II.\n(3 Canais apresentam defeito, os demais funcionam perfeitamente.)\n12 canais de entrada, canal de saída Stereo Master L e R, 1 canal de efeitos, 1 canal stereo de entrada Auxiliar (CD, MD, tape-deck, etc.) e 1 canal stereo para fone-de-ouvido.\nContém um canal de saída Stereo Master (L e R) com controles de volumes deslizantes independentes (L e R) (14) e detectores de pico (8) e (9).\nO canal de efeitos (EFFECT) contém controles de efeitos individuais por canal de entrada.",
+        "category": "mesa de som",
+        "image": ["https://img.olx.com.br/images/07/079317738230615.jpg","https://img.olx.com.br/images/07/075357736834877.jpg","https://img.olx.com.br/images/07/073319733886051.jpg","https://img.olx.com.br/images/07/076374371168714.jpg","https://img.olx.com.br/images/07/078351134221684.jpg"],
+        "author": "Jovelino",
+        "address": {
+            "city": "São Luís",
+            "state": "MA"
+        }
+    },
+    {
+        "id": 24,
+        "title": "Pedestal",
+        "price": 150,
+        "description": "Pedestal para microfone.",
+        "category": "pedestal",
+        "image": ["https://img.olx.com.br/images/08/089374256592633.jpg"],
+        "author": "Nilson Nascimento",
+        "address": {
+            "city": "Teresina",
+            "state": "PI"
         }
     }
 ]
