@@ -2,12 +2,9 @@ import style from './style.module.css'
 import { category } from '../../services/categoryIcon'
 import { useState } from 'react'
 
-export function FilterAside({ categorySelected, handleCategoryClick, priceMin, priceMax, setPriceMin, setPriceMax, stateAbbreviaton, setStateAbbreviaton }) {
+export function FilterAside({ categorySelected, handleCategoryClick, PRICE_MIN_DEFAULT, PRICE_MAX_DEFAULT, priceMin, priceMax, setPriceMin, setPriceMax, stateAbbreviaton, setStateAbbreviaton }) {
 
     // Handle local price interval
-    const PRICE_MIN_DEFAULT = 0;
-    const PRICE_MAX_DEFAULT = 30000;
-
     const [localPriceMin, setLocalPriceMin] = useState(PRICE_MIN_DEFAULT);
     const [localPriceMax, setLocalPriceMax] = useState(PRICE_MAX_DEFAULT);
 
@@ -17,8 +14,23 @@ export function FilterAside({ categorySelected, handleCategoryClick, priceMin, p
     }
 
     const handlePriceClick = () => {
-        setPriceMin(localPriceMin);
-        setPriceMax(localPriceMax);
+        if (localPriceMin < PRICE_MIN_DEFAULT || localPriceMin > PRICE_MAX_DEFAULT) {
+            document.getElementById("priceMin").classList.add("bg-danger");
+            document.getElementById("priceMin").classList.add("text-white")
+        } else {
+            document.getElementById("priceMin").classList.remove("bg-danger");
+            document.getElementById("priceMin").classList.remove("text-white");
+            setPriceMin(localPriceMin)
+        }
+
+        if (localPriceMax < PRICE_MIN_DEFAULT || localPriceMax > PRICE_MAX_DEFAULT) {
+            document.getElementById("priceMax").classList.add("bg-danger");
+            document.getElementById("priceMax").classList.add("text-white")
+        } else {
+            document.getElementById("priceMax").classList.remove("bg-danger");
+            document.getElementById("priceMax").classList.remove("text-white");
+            setPriceMax(localPriceMax)
+        }
     }
 
     const resetPrice = () => {
@@ -43,7 +55,7 @@ export function FilterAside({ categorySelected, handleCategoryClick, priceMin, p
 
                     <button className={`${style.resetFilterBtn} btn col-3`} onClick={handleCategoryClick}>
                         {
-                            (categorySelected === "") ? "Categoria (Todas)" : (<img className='col-8' src={`https://img.icons8.com/fluency-systems-filled/48/${category[categorySelected]}`} alt={category} />)
+                            (categorySelected === "") ? "Categ. (Todas)" : (<img className='col-8' src={`https://img.icons8.com/fluency-systems-filled/48/${category[categorySelected]}`} alt={category} />)
                         }
                     </button>
 
@@ -56,8 +68,8 @@ export function FilterAside({ categorySelected, handleCategoryClick, priceMin, p
             <section>
                 <p className={`${style.filterTitle} fw-bold m-0`}>Preço</p>
                 <div className="input-group">
-                    <input id="priceMin" type="number" className="form-control" placeholder="Mínimo" aria-label="Barra de preço mínimo" min={0} max={30000} value={localPriceMin} onChange={priceOnChange} />
-                    <input id="priceMax" type="number" className="form-control" placeholder="Máximo" aria-label="Barra de preço máximo" min={0} max={30000} value={localPriceMax} onChange={priceOnChange} />
+                    <input id="priceMin" type="number" className="form-control" placeholder="Mínimo" aria-label="Barra de preço mínimo" min={PRICE_MIN_DEFAULT} max={PRICE_MAX_DEFAULT} value={localPriceMin} onChange={priceOnChange} />
+                    <input id="priceMax" type="number" className="form-control" placeholder="Máximo" aria-label="Barra de preço máximo" min={PRICE_MIN_DEFAULT} max={PRICE_MAX_DEFAULT} value={localPriceMax} onChange={priceOnChange} />
 
                     <div className={`${style.okBtn} input-group-append rounded`}>
                         <button className="btn text-white fw-semibold" type="button" onClick={handlePriceClick}>OK</button>

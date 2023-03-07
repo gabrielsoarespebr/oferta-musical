@@ -30,8 +30,11 @@ function App() {
   }
 
   // Handle price interval
-  const [priceMin, setPriceMin] = useState(0);
-  const [priceMax, setPriceMax] = useState(30000);
+  const PRICE_MIN_DEFAULT = 0;
+  const PRICE_MAX_DEFAULT = 9999;
+
+  const [priceMin, setPriceMin] = useState(PRICE_MIN_DEFAULT);
+  const [priceMax, setPriceMax] = useState(PRICE_MAX_DEFAULT);
 
   // Handle state abbreviation
   const [stateAbbreviaton, setStateAbbreviaton] = useState('');
@@ -40,7 +43,7 @@ function App() {
     <div className="App">
       <Header setSearchValue={setSearchValue} />
       <main className='d-flex justify-content-around my-3'>
-        <FilterAside categorySelected={categorySelected} handleCategoryClick={handleCategoryClick} priceMin={priceMin} priceMax={priceMax} setPriceMin={setPriceMin} setPriceMax={setPriceMax} stateAbbreviaton={stateAbbreviaton} setStateAbbreviaton={setStateAbbreviaton}></FilterAside>
+        <FilterAside categorySelected={categorySelected} handleCategoryClick={handleCategoryClick} PRICE_MIN_DEFAULT={PRICE_MIN_DEFAULT} PRICE_MAX_DEFAULT={PRICE_MAX_DEFAULT} priceMin={priceMin} priceMax={priceMax} setPriceMin={setPriceMin} setPriceMax={setPriceMax} stateAbbreviaton={stateAbbreviaton} setStateAbbreviaton={setStateAbbreviaton}></FilterAside>
 
         <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax} stateAbbreviaton={stateAbbreviaton}></ProductList>
       </main>
