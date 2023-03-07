@@ -34,6 +34,10 @@ img {
   cursor: pointer;
 }
 
+.text-green-light{
+  color: var(--greenLight) !important;
+}
+
 /* OVERRINDING BOOTSTRAP */
 .input-group .btn {
   z-index: 0  !important;

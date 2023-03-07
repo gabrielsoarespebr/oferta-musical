@@ -17,3 +17,16 @@
 .okBtn:hover {
     background-color: var(--greenDark);   
 }
+
+.resetFilterBtn{
+    font-size: small;
+    
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 2%;
+}
+
+.resetFilterBtn:hover{
+    background-color: var(--greenPastelDark);
+    border: 1px solid #ced4da;
+}

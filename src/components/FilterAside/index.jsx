@@ -2,11 +2,14 @@ import style from './style.module.css'
 import { category } from '../../services/categoryIcon'
 import { useState } from 'react'
 
-export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax, setStateAbbreviaton }) {
+export function FilterAside({ categorySelected, handleCategoryClick, priceMin, priceMax, setPriceMin, setPriceMax, stateAbbreviaton, setStateAbbreviaton }) {
 
     // Handle local price interval
-    const [localPriceMin, setLocalPriceMin] = useState(0);
-    const [localPriceMax, setLocalPriceMax] = useState(30000);
+    const PRICE_MIN_DEFAULT = 0;
+    const PRICE_MAX_DEFAULT = 30000;
+
+    const [localPriceMin, setLocalPriceMin] = useState(PRICE_MIN_DEFAULT);
+    const [localPriceMax, setLocalPriceMax] = useState(PRICE_MAX_DEFAULT);
 
     const priceOnChange = priceInput => {
         if (priceInput.target.id === "priceMin") setLocalPriceMin(priceInput.target.value)
@@ -16,6 +19,11 @@ export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax, set
     const handlePriceClick = () => {
         setPriceMin(localPriceMin);
         setPriceMax(localPriceMax);
+    }
+
+    const resetPrice = () => {
+        setPriceMin(PRICE_MIN_DEFAULT);
+        setPriceMax(PRICE_MAX_DEFAULT);
     }
 
     // Handle states abbreviation filter
@@ -28,6 +36,23 @@ export function FilterAside({ handleCategoryClick, setPriceMin, setPriceMax, set
 
     return (
         <aside className={`${style.searchSidebar} fw-semibold p-3 d-flex flex-column gap-4 mb-auto`}>
+            <div>
+                <p className={`${style.filterTitle} text-green-light fw-bold m-0`}>Filtros aplicados</p>
+                <div className='d-flex'>
+                    <button className={`${style.resetFilterBtn} btn col-6`} onClick={resetPrice}>R${priceMin} - R${priceMax}</button>
+
+                    <button className={`${style.resetFilterBtn} btn col-3`} onClick={handleCategoryClick}>
+                        {
+                            (categorySelected === "") ? "Categoria (Todas)" : (<img className='col-8' src={`https://img.icons8.com/fluency-systems-filled/48/${category[categorySelected]}`} alt={category} />)
+                        }
+                    </button>
+
+                    <button className={`${style.resetFilterBtn} btn col-3`} onClick={handleStateFlagClick}>
+                        {(stateAbbreviaton === "") ? "Estado (Todos)" : (<img className='shadow-sm' src={`https://github.com/bgeneto/bandeiras-br/blob/master/imagens/${stateAbbreviaton}.png?raw=true`} alt="State flag" />)}
+                    </button>
+                </div>
+            </div>
+
             <section>
                 <p className={`${style.filterTitle} fw-bold m-0`}>Preço</p>
                 <div className="input-group">

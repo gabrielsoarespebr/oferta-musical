@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <Header setSearchValue={setSearchValue} />
       <main className='d-flex justify-content-around my-3'>
-        <FilterAside handleCategoryClick={handleCategoryClick} setPriceMin={setPriceMin} setPriceMax={setPriceMax} setStateAbbreviaton={setStateAbbreviaton}></FilterAside>
+        <FilterAside categorySelected={categorySelected} handleCategoryClick={handleCategoryClick} priceMin={priceMin} priceMax={priceMax} setPriceMin={setPriceMin} setPriceMax={setPriceMax} stateAbbreviaton={stateAbbreviaton} setStateAbbreviaton={setStateAbbreviaton}></FilterAside>
 
         <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax} stateAbbreviaton={stateAbbreviaton}></ProductList>
       </main>
