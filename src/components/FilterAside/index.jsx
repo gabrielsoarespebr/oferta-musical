@@ -47,8 +47,8 @@ export function FilterAside({ categorySelected, handleCategoryClick, PRICE_MIN_D
     }
 
     return (
-        <aside className={`${style.searchSidebar} fw-semibold p-3 d-flex flex-column gap-4 mb-auto`}>
-            <div>
+        <aside className={`${style.searchSidebar} fw-semibold p-3 d-flex flex-sm-column gap-4 mb-4 mb-sm-auto flex-wrap`}>
+            <div className='col-6 col-sm-12'>
                 <p className={`${style.filterTitle} text-green-light fw-bold m-0`}>Filtros aplicados</p>
                 <div className='d-flex'>
                     <button className={`${style.resetFilterBtn} btn col-6`} onClick={resetPrice}>R${priceMin} - R${priceMax}</button>
@@ -65,7 +65,7 @@ export function FilterAside({ categorySelected, handleCategoryClick, PRICE_MIN_D
                 </div>
             </div>
 
-            <section>
+            <section className='col-5 col-sm-12'>
                 <p className={`${style.filterTitle} fw-bold m-0`}>Preço</p>
                 <div className="input-group">
                     <input id="priceMin" type="number" className="form-control" placeholder="Mínimo" aria-label="Barra de preço mínimo" min={PRICE_MIN_DEFAULT} max={PRICE_MAX_DEFAULT} value={localPriceMin} onChange={priceOnChange} />
@@ -77,7 +77,7 @@ export function FilterAside({ categorySelected, handleCategoryClick, PRICE_MIN_D
                 </div>
             </section>
 
-            <dl className='m-0'>
+            <dl className='m-0 col-6 col-sm-12'>
                 <dt className={style.filterTitle}>Categoria</dt>
                 {
                     Object
@@ -93,7 +93,7 @@ export function FilterAside({ categorySelected, handleCategoryClick, PRICE_MIN_D
                 }
             </dl>
 
-            <section>
+            <section className='col-5 col-sm-12'>
                 <p className={`${style.filterTitle} fw-bold m-0`}>Estados</p>
                 <dl className='d-flex flex-wrap gap-2'>
                     {states.map(state => {

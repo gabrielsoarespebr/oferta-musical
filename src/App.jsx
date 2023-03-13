@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <Header setSearchValue={setSearchValue} />
-      <main className='d-flex justify-content-around my-3'>
+      <main className='d-flex flex-column flex-sm-row justify-content-around align-items-sm-center my-3'>
         <FilterAside categorySelected={categorySelected} handleCategoryClick={handleCategoryClick} PRICE_MIN_DEFAULT={PRICE_MIN_DEFAULT} PRICE_MAX_DEFAULT={PRICE_MAX_DEFAULT} priceMin={priceMin} priceMax={priceMax} setPriceMin={setPriceMin} setPriceMax={setPriceMax} stateAbbreviaton={stateAbbreviaton} setStateAbbreviaton={setStateAbbreviaton}></FilterAside>
 
         <ProductList searchValue={searchValue} categorySelected={categorySelected} productList={productList} priceMin={priceMin} priceMax={priceMax} stateAbbreviaton={stateAbbreviaton}></ProductList>

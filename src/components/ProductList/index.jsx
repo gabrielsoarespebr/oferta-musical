@@ -3,7 +3,7 @@ import { ProductCard } from '../ProductCard';
 
 export function ProductList({ searchValue, categorySelected, priceMin, priceMax, stateAbbreviaton, productList }) {
     return (
-        <Row className="row-cols-3 w-75">
+        <Row className="col-12 col-sm-9 row-cols-1 row-cols-sm-2 row-cols-lg-3 m-auto">
             {
                 productList
                     .filter(product =>

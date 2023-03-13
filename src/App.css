@@ -14,8 +14,14 @@ html {
   box-sizing: border-box;
 }
 
+body{
+  min-height: 100%;
+  min-width: 100%;
+}
+
 .App {
   background-color: var(--greenPastelDark);
+  min-height: 100vh;
 }
 
 *,

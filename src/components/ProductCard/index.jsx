@@ -46,8 +46,8 @@ export function ProductCard(props) {
                     <h2>{props.info.title}</h2>
                     <RiCloseFill onClick={closeModal} className="fs-2 cursor-pointer"></RiCloseFill>
                 </div>
-                <div className="d-flex gap-4">
-                    <div className='w-50'>
+                <div className="d-flex flex-column-reverse flex-sm-row gap-4">
+                    <div className='col-12 col-sm-6'>
                         <Carousel>
                             {
                                 props.info.image.map((imageUrl, key) => {
@@ -58,7 +58,7 @@ export function ProductCard(props) {
                             }
                         </Carousel>
                     </div>
-                    <div className='w-50 d-flex flex-column gap-3'>
+                    <div className='col-12 col-sm-6 d-flex flex-column gap-3'>
                         <p className='my-0'>{props.info.description}</p>
                         <div>
                             <div className='d-flex'>

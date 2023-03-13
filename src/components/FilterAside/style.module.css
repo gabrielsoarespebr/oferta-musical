@@ -1,32 +1,41 @@
 .searchSidebar {
     width: 22vw;
-    
+
     background-color: var(--greenPastelLight);
 
     border-radius: var(--rounded);
 }
 
-.filterTitle{
+@media (max-width: 576px) {
+    .searchSidebar {
+        width: 100%;
+        height: 200px;
+
+        overflow: auto;
+    }
+}
+
+.filterTitle {
     color: var(--blackLight);
 }
 
 .okBtn {
-    background-color: var(--greenLight);   
+    background-color: var(--greenLight);
 }
 
 .okBtn:hover {
-    background-color: var(--greenDark);   
+    background-color: var(--greenDark);
 }
 
-.resetFilterBtn{
+.resetFilterBtn {
     font-size: small;
-    
+
     background-color: white;
     border: 1px solid #ced4da;
     padding: 2%;
 }
 
-.resetFilterBtn:hover{
+.resetFilterBtn:hover {
     background-color: var(--greenPastelDark);
     border: 1px solid #ced4da;
 }
