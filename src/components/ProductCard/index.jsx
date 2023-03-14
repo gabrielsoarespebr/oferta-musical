@@ -72,7 +72,7 @@ export function ProductCard(props) {
                                     </div>
 
                                     <div className='d-flex m-0 align-items-center gap-2'>
-                                        <img className='col-1' src="./src/assets/icons/icons8-usuário-30.png" alt="User icon" />
+                                        <img className='col-1' src={"../../src/assets/icons/icons8-usuário-30.png"} alt="User icon" />
                                         <span className='fw-semibold m-0 small'>
                                             {props.info.author}
                                         </span>

@@ -24,7 +24,7 @@ export function RowSecondaryInfo(props) {
         return (
             <div className='d-flex justify-content-between align-items-center mt-auto'>
                 <Card.Text className='d-flex m-0 align-items-center gap-2 w-50'>
-                    <img className='col-2' src="./src/assets/icons/icons8-usuário-30.png" alt="User icon" />
+                    <img className='col-2' src={"../../src/assets/icons/icons8-usuário-30.png"} alt="User icon" />
                     <span className='fw-semibold m-0 small'>
                         {props.info.author}
                     </span>

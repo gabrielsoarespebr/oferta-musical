@@ -19,7 +19,7 @@ export function Header({ setSearchValue }) {
 
     return (
         <header className={`${style.header} d-flex justify-content-around align-items-center`}>
-            <img className={`${style.logo} cursor-pointer`} src="src/assets/logo/ofertamusicalLOGO.png" alt="Logotipo" onClick={()=>history.go(0)} />
+            <img className={`${style.logo} cursor-pointer`} src={"../../src/assets/logo/ofertamusicalLOGO.png"} alt="Logotipo" onClick={()=>history.go(0)} />
 
             <div className="input-group w-50">
                 <input type="text" className="form-control" placeholder="Pesquise por um instrumento (Ex: Guitarra Les Paul)" aria-label="Barra de pesquisa de instrumento" value={inputValue} onChange={inputOnChange} onKeyDown={handleKeyDown} />
