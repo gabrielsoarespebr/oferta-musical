@@ -5,6 +5,7 @@ import { ProductList } from './components/ProductList'
 import { useEffect, useState } from 'react';
 import { FilterAside } from './components/FilterAside';
 import { Footer } from './components/Footer';
+import productAPI from './src/services/productAPI.js';
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   const [productList, setProductList] = useState([]);
 
   async function fetchProduct() {
-    const response = await fetch("src/services/productAPI.js");
+    const response = await fetch(productAPI);
     setProductList(await response.json());
   }
 
