@@ -5,7 +5,7 @@ import { ProductList } from './components/ProductList'
 import { useEffect, useState } from 'react';
 import { FilterAside } from './components/FilterAside';
 import { Footer } from './components/Footer';
-import productAPI from './src/services/productAPI.js';
+import { productAPI } from './services/productAPI.js';
 
 
 function App() {

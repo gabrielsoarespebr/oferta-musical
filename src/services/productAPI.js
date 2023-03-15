@@ -1,4 +1,4 @@
-[
+export const productAPI = [
     {
         "id": 1,
         "title": "Violino elétrico",

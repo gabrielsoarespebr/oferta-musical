@@ -1,7 +1,7 @@
 import style from './style.module.css'
 import { FaSearch } from 'react-icons/fa'
 import { useState } from 'react';
-import logo from '../../src/assets/logo/ofertamusicalLOGO.png';
+import logo from '../../assets/logo/ofertamusicalLOGO.png';
 
 export function Header({ setSearchValue }) {
 
