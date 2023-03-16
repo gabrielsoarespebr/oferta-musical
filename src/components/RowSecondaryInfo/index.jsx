@@ -1,5 +1,6 @@
 import { Card } from 'react-bootstrap'
 import { category } from '../../services/categoryIcon'
+import { RiUserFill } from 'react-icons/ri'
 
 export function RowSecondaryInfo(props) {
 
@@ -24,7 +25,7 @@ export function RowSecondaryInfo(props) {
         return (
             <div className='d-flex justify-content-between align-items-center mt-auto'>
                 <Card.Text className='d-flex m-0 align-items-center gap-2 w-50'>
-                    <img className='col-2' src={"../../src/assets/icons/icons8-usuário-30.png"} alt="User icon" />
+                    <RiUserFill></RiUserFill>
                     <span className='fw-semibold m-0 small'>
                         {props.info.author}
                     </span>

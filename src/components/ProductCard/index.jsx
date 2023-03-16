@@ -87,8 +87,6 @@ export function ProductCard(props) {
                                 <div className='fs-1 fw-semibold'>R${props.info.price}</div>
 
                             </div>
-
-
                         </div>
 
                         <button className={`${style.buyBtn} text-white fw-semibold fs-4 btn d-flex justify-content-center align-items-center gap-2`} onClick={openModal}>
@@ -97,11 +95,7 @@ export function ProductCard(props) {
                         </button>
                     </div>
                 </div>
-
-
             </Modal>
-
-
         </Card>
     )
 }

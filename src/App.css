@@ -48,3 +48,14 @@ img {
 .input-group .btn {
   z-index: 0  !important;
 }
+
+/* SCROLL - BACK */
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--greenPastelDark);
+}
+
+/* SCROLL - FRONT */
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(var(--greenLight), var(--greenDark));
+}
