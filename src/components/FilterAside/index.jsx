@@ -43,7 +43,6 @@ export function FilterAside({ categorySelected, handleCategoryClick, PRICE_MIN_D
 
     const handleStateFlagClick = stateFlag => {
         setStateAbbreviaton(stateFlag.target.title);
-        console.log(stateFlag)
     }
 
     return (
