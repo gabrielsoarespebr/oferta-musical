@@ -2,7 +2,6 @@ import style from './style.module.css'
 import { FaSearch } from 'react-icons/fa'
 import { useState } from 'react';
 
-
 export function Header({ setSearchValue }) {
 
     const [inputValue, setInputValue] = useState('');

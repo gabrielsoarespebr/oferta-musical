@@ -6,13 +6,12 @@ import { useEffect, useState } from 'react';
 import { FilterAside } from './components/FilterAside';
 import { Footer } from './components/Footer';
 
-
 function App() {
   // Fetching productAPI.js data
   const [productList, setProductList] = useState([]);
 
   async function fetchProduct() {
-    const response = await fetch("src/services/productAPI.js");
+    const response = await fetch("https://mocki.io/v1/b3c311ef-7382-4f4d-bf94-6e6dd0c49dfe");
     setProductList(await response.json());
   }
 
