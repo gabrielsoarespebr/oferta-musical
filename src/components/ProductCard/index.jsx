@@ -6,6 +6,7 @@ import { RowSecondaryInfo } from '../RowSecondaryInfo'
 import style from './style.module.css'
 import { FaShoppingCart } from 'react-icons/fa'
 import { RiCloseFill } from 'react-icons/ri'
+import { RiUserFill } from 'react-icons/ri'
 import { BsInfoCircleFill } from 'react-icons/bs'
 
 Modal.setAppElement('#root');
@@ -72,7 +73,7 @@ export function ProductCard(props) {
                                     </div>
 
                                     <div className='d-flex m-0 align-items-center gap-2'>
-                                        <img className='col-1' src={"../../src/assets/icons/icons8-usuário-30.png"} alt="User icon" />
+                                        <RiUserFill></RiUserFill>
                                         <span className='fw-semibold m-0 small'>
                                             {props.info.author}
                                         </span>
